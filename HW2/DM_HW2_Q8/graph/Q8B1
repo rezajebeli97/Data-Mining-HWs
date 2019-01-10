@@ -1,0 +1,9 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<sporeprintcolor &le; 8.5<br/>entropy = 0.97<br/>samples = 2257<br/>value = [1359, 898]<br/>class = poisonous>, fillcolor="#e5813957"] ;
+1 [label=<entropy = 0.469<br/>samples = 629<br/>value = [63, 566]<br/>class = non-poisonous>, fillcolor="#399de5e3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 0.73<br/>samples = 1628<br/>value = [1296, 332]<br/>class = poisonous>, fillcolor="#e58139be"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

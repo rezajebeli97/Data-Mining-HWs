@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<sporeprintcolor &le; 8.5<br/>entropy = 0.97<br/>samples = 2257<br/>value = [1359, 898]<br/>class = poisonous>, fillcolor="#e5813957"] ;
+1 [label=<stalkcolorbelowring &le; 14.0<br/>entropy = 0.469<br/>samples = 629<br/>value = [63, 566]<br/>class = non-poisonous>, fillcolor="#399de5e3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<stalkcolorabovering &le; 14.0<br/>entropy = 0.326<br/>samples = 336<br/>value = [20, 316]<br/>class = non-poisonous>, fillcolor="#399de5ef"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.201<br/>samples = 224<br/>value = [7, 217]<br/>class = non-poisonous>, fillcolor="#399de5f7"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.518<br/>samples = 112<br/>value = [13, 99]<br/>class = non-poisonous>, fillcolor="#399de5de"] ;
+2 -> 4 ;
+5 [label=<habitat &le; 10.5<br/>entropy = 0.602<br/>samples = 293<br/>value = [43, 250]<br/>class = non-poisonous>, fillcolor="#399de5d3"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.519<br/>samples = 172<br/>value = [20, 152]<br/>class = non-poisonous>, fillcolor="#399de5dd"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.702<br/>samples = 121<br/>value = [23, 98]<br/>class = non-poisonous>, fillcolor="#399de5c3"] ;
+5 -> 7 ;
+8 [label=<gillsize &le; 7.0<br/>entropy = 0.73<br/>samples = 1628<br/>value = [1296, 332]<br/>class = poisonous>, fillcolor="#e58139be"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<sporeprintcolor &le; 15.0<br/>entropy = 0.511<br/>samples = 1354<br/>value = [1200, 154]<br/>class = poisonous>, fillcolor="#e58139de"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.443<br/>samples = 1303<br/>value = [1183, 120]<br/>class = poisonous>, fillcolor="#e58139e5"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.918<br/>samples = 51<br/>value = [17, 34]<br/>class = non-poisonous>, fillcolor="#399de57f"] ;
+9 -> 11 ;
+12 [label=<population &le; 19.5<br/>entropy = 0.934<br/>samples = 274<br/>value = [96, 178]<br/>class = non-poisonous>, fillcolor="#399de575"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.399<br/>samples = 101<br/>value = [8, 93]<br/>class = non-poisonous>, fillcolor="#399de5e9"] ;
+12 -> 13 ;
+14 [label=<entropy = 1.0<br/>samples = 173<br/>value = [88, 85]<br/>class = poisonous>, fillcolor="#e5813909"] ;
+12 -> 14 ;
+}
