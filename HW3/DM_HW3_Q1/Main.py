@@ -1,4 +1,4 @@
-from Q1 import Apriori, Rule
+from HW3.DM_HW3_Q1.Q1 import Apriori, Rule
 
 ############################################################################ Q1_part1
 transactions = [
